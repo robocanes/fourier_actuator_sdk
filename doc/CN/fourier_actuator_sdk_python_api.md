@@ -11,15 +11,13 @@
 | 电流 | A |
 | 力矩 | N·m |
 
-python脚本仓库：[https://gitee.com/FourierIntelligence/wiki-fsa.git](https://gitee.com/FourierIntelligence/wiki-fsa.git)
-
 # 接口函数说明
 
 ## comm接口
 
 ### get\_comm\_root(server\_ip)
 
-该函数对应的python脚本demo为[`demo_lookup.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2u4qee7669v0uwn9t5)（双击可跳转）
+该函数对应的python脚本demo为[`demo_lookup.py`](#demo_lookuppy)
 
 **函数说明：**
 
@@ -30,7 +28,7 @@ python脚本仓库：[https://gitee.com/FourierIntelligence/wiki-fsa.git](https:
 
 ### get\_comm\_driver\_version(server\_ip)
 
-该函数对应的python脚本demo为[`demo_comm_driver_firmware_version_get.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2v8ystkrgjxe6rtixj)（双击可跳转）
+该函数对应的python脚本demo为[`demo_comm_driver_firmware_version_get.py`](#demo_comm_driver_firmware_version_getpy)
 
 **函数说明：**
 
@@ -41,7 +39,7 @@ python脚本仓库：[https://gitee.com/FourierIntelligence/wiki-fsa.git](https:
 
 ### get\_comm\_firmware\_version(server\_ip)
 
-该函数对应的python脚本demo为[`demo_comm_driver_firmware_version_get.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2v8ystkrgjxe6rtixj)（双击可跳转）
+该函数对应的python脚本demo为[`demo_comm_driver_firmware_version_get.py`](#demo_comm_driver_firmware_version_getpy)
 
 **函数说明：**
 
@@ -52,7 +50,7 @@ python脚本仓库：[https://gitee.com/FourierIntelligence/wiki-fsa.git](https:
 
 ### get\_comm\_config(server\_ip)
 
-该函数对应的python脚本demo为[`get_comm_config_get.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2v9jlckd1f8g1nfe7)（双击可跳转）
+该函数对应的python脚本demo为[`demo_comm_config_get.py`](#demo_comm_config_getpy)
 
 | 函数作用 | 获取执行器的config属性（会在终端打印执行器的config属性） |
 | --- | --- |
@@ -61,7 +59,7 @@ python脚本仓库：[https://gitee.com/FourierIntelligence/wiki-fsa.git](https:
 
 ### set\_comm\_config(server\_ip, dict)
 
-该函数对应的python脚本demo为[`demo_comm_config_set.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vb89cedj4a1s2h3ph)（双击可跳转）
+该函数对应的python脚本demo为[`demo_comm_config_set.py`](#demo_comm_config_setpy)
 
 | 函数作用 | 设置执行器的config属性 |
 | --- | --- |
@@ -114,7 +112,7 @@ python脚本仓库：[https://gitee.com/FourierIntelligence/wiki-fsa.git](https:
 
 ### set\_subscribe(server\_ip, cfg\_dict)
 
-该函数对应的python脚本demo为[`demo_set_subscribe.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vibmvkk9o0yb0v57j)（双击可跳转）
+该函数对应的python脚本demo为[`demo_set_subscribe.py`](#demo_set_subscribepy)
 
 | 函数作用 | 订阅接口，将执行器的数据可选择地发送到指定端口 |
 | --- | --- |
@@ -163,7 +161,7 @@ config = {
 
 ### ota(server\_ip)
 
-该函数对应的python脚本demo为[`demo_ota.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vjcuvma9muqqld8b)（双击可跳转）
+该函数对应的python脚本demo为[`demo_ota.py`](#demo_otapy)
 
 | 函数作用 | 对执行器进行通信ota升级，升级版本为生产版。 |
 | --- | --- |
@@ -172,7 +170,7 @@ config = {
 
 ### ota\_test(server\_ip)
 
-该函数对应的python脚本demo为[`demo_ota_text.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vjdcpbhown7e6x806)（双击可跳转）
+该函数对应的python脚本demo为[`demo_ota_test.py`](#demo_ota_testpy)
 
 | 函数作用 | 对执行器进行通信ota升级，升级版本为测试版。 |
 | --- | --- |
@@ -181,7 +179,7 @@ config = {
 
 ### ota\_devel(server\_ip)
 
-该函数对应的python脚本demo为[`demo_ota_devel.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vjen6lfittvfnqkv)（双击可跳转）
+该函数对应的python脚本demo为[`demo_ota_devel.py`](#demo_ota_develpy)
 
 | 函数作用 | 对执行器进行通信ota升级，升级版本为开发版。 |
 | --- | --- |
@@ -190,7 +188,7 @@ config = {
 
 ### ota\_cloud(server\_ip)
 
-该函数对应的python脚本demo为[`demo_ota_cloud.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vjdyhq7qdtjbtoit)（双击可跳转）
+该函数对应的python脚本demo为[`demo_ota_cloud.py`](#demo_ota_cloudpy)
 
 | 函数作用 | 对执行器进行通信ota升级，升级版本为云端版。 |
 | --- | --- |
@@ -199,7 +197,7 @@ config = {
 
 ### ota\_custom(server\_ip, version\_str)
 
-该函数对应的python脚本demo为[`demo_ota_custom.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vjeb2elk4prflixk)（双击可跳转）
+该函数对应的python脚本demo为[`demo_ota_custom.py`](#demo_ota_custompy)
 
 | 函数作用 | 对执行器进行通信ota升级，升级版本为自定义版。 |
 | --- | --- |
@@ -208,7 +206,7 @@ config = {
 
 ### ota\_driver(server\_ip)
 
-该函数对应的python脚本demo为[`demo_ota_driver.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vkejaigh78klvyiw)
+该函数对应的python脚本demo为[`demo_ota_driver.py`](#demo_ota_driverpy)
 
 | 函数作用 | 对执行器进行驱动ota升级，升级版本为生产版。 |
 | --- | --- |
@@ -217,7 +215,7 @@ config = {
 
 ### ota\_driver\_test(server\_ip)
 
-该函数对应的python脚本demo为[`demo_ota_driver_test.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vkevwy4jg1oeh6wmm)
+该函数对应的python脚本demo为[`demo_ota_driver_test.py`](#demo_ota_driver_testpy)
 
 | 函数作用 | 对执行器进行驱动ota升级，升级版本为测试版。 |
 | --- | --- |
@@ -226,7 +224,7 @@ config = {
 
 ### ota\_driver\_devel(server\_ip)
 
-该函数对应的python脚本demo为[`demo_ota_driver_devel.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vkf7q9qybt4eqrle)
+该函数对应的python脚本demo为[`demo_ota_driver_devel.py`](#demo_ota_driver_develpy)
 
 | 函数作用 | 对执行器进行驱动ota升级，升级版本为开发版。 |
 | --- | --- |
@@ -235,7 +233,7 @@ config = {
 
 ### ota\_driver\_cloud(server\_ip)
 
-该函数对应的python脚本demo为[`demo_ota_driver_cloud.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vkfpf4j02qpbivof)
+该函数对应的python脚本demo为[`demo_ota_driver_cloud.py`](#demo_ota_driver_cloudpy)
 
 | 函数作用 | 对执行器进行驱动ota升级，升级版本为云端版。 |
 | --- | --- |
@@ -244,7 +242,7 @@ config = {
 
 ### ota\_driver\_custom(server\_ip ,version\_str)
 
-该函数对应的python脚本demo为[`demo_ota_driver_custom.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2vkfxfjlj2h65jmtos)
+该函数对应的python脚本demo为[`demo_ota_driver_custom.py`](#demo_ota_driver_custompy)
 
 | 函数作用 | 对执行器进行驱动ota升级，升级版本为自定义版。 |
 | --- | --- |
@@ -255,7 +253,7 @@ config = {
 
 ### set\_enable(server\_ip)
 
-该函数对应的python脚本demo为[`demo_enable_set.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2wrmoj64i7pbise853)（双击可跳转）
+该函数对应的python脚本demo为[`demo_enable_set.py`](#demo_enable_setpy)
 
 **函数说明：**
 
@@ -266,7 +264,7 @@ config = {
 
 ### set\_disable(server\_ip)
 
-该函数对应的python脚本demo为[`demo_enable_set.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2wucgoxh6o7x0bj1i6)（双击可跳转）
+该函数对应的python脚本demo为[`demo_enable_set.py`](#demo_enable_setpy)
 
 **函数说明：**
 
@@ -277,7 +275,7 @@ config = {
 
 ### clear\_fault(server\_ip)
 
-该函数对应的python脚本demo为[demo\_clear\_fault.py](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m3e3w573l53rlewlgf)（双击可跳转）
+该函数对应的python脚本demo为[`demo_clear_fault.py`](#demo_clear_faultpy)
 
 **函数说明：**
 
@@ -288,7 +286,7 @@ config = {
 
 ### set\_calibrate\_encoder(server\_ip)
 
-该函数对应的python脚本demo为[`demo_set_calibrate_encoder.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2wybvalrv343vcvm8q)（双击可跳转）（注意：校准过程中，执行器会转动，建议要把执行器固定好再校准）
+该函数对应的python脚本demo为[`demo_set_calibrate_encoder.py`](#demo_set_calibrate_encoderpy)（注意：校准过程中，执行器会转动，建议要把执行器固定好再校准）
 
 **函数说明：**
 
@@ -308,7 +306,7 @@ config = {
 
 ### set\_mode\_of\_operation(server\_ip, mode\_of\_operation)
 
-该函数对应的python脚本demo为（双击可跳转）
+该函数无对应的python脚本。
 
 **函数说明：**
 
@@ -343,7 +341,7 @@ fi_fsa_v2.set_mode_of_operation(server_ip_list[i], fi_fsa_v2.FSAModeOfOperation.
 
 ### get\_pid\_param(server\_ip)
 
-该函数对应的python脚本demo为[`demo_pid_param_get.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zl8hin91rjobopvv)（双击可跳转）
+该函数对应的python脚本demo为[`demo_pid_param_get.py`](#demo_pid_param_getpy)
 
 **函数说明：**
 
@@ -354,7 +352,7 @@ fi_fsa_v2.set_mode_of_operation(server_ip_list[i], fi_fsa_v2.FSAModeOfOperation.
 
 ### set\_pid\_param(server\_ip, dict)
 
-该函数对应的python脚本demo为[`demo_pid_param_set.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zmdt5rbgyn9bcmt2s)（双击可跳转）
+该函数对应的python脚本demo为[`demo_pid_param_set.py`](#demo_pid_param_setpy)
 
 **函数说明：**
 
@@ -385,7 +383,7 @@ fi_fsa_v2.set_mode_of_operation(server_ip_list[i], fi_fsa_v2.FSAModeOfOperation.
 
 ### get\_pid\_param\_imm(server\_ip)
 
-该函数对应的python脚本demo为[`demo_pid_param_imm_get.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zq0xppomslpymxaa)（双击可跳转）
+该函数对应的python脚本demo为[`demo_pid_param_imm_get.py`](#demo_pid_param_imm_getpy)
 
 **函数说明：**
 
@@ -396,7 +394,7 @@ fi_fsa_v2.set_mode_of_operation(server_ip_list[i], fi_fsa_v2.FSAModeOfOperation.
 
 ### set\_pid\_param\_imm(server\_ip, dict)
 
-该函数对应的python脚本demo为[`demo_pid_param_imm_set.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zq6zpuoe3jmj9sun)（双击可跳转）
+该函数对应的python脚本demo为[`demo_pid_param_imm_set.py`](#demo_pid_param_imm_setpy)
 
 **函数说明：**
 
@@ -425,7 +423,7 @@ dict = {
 
 ### get\_control\_param(server\_ip)
 
-该函数对应的python脚本demo为[`demo_control_param_get.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zrte09qejdyrwz8ya)（双击可跳转）
+该函数对应的python脚本demo为[`demo_control_param_get.py`](#demo_control_param_getpy)
 
 **函数说明：**
 
@@ -436,7 +434,7 @@ dict = {
 
 ### set\_control\_param(server\_ip, dict)该函数暂时不能用
 
-该函数对应的python脚本demo为[`demo_control_param_set.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zryh1jwvr96dj699)（双击可跳转）
+该函数对应的python脚本demo为[`demo_control_param_set.py`](#demo_control_param_setpy)
 
 **函数说明：**
 
@@ -461,7 +459,7 @@ dict = {
 
 ### get\_control\_param\_imm(server\_ip)
 
-该函数对应的python脚本demo为[`demo_control_param_imm_get.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zsviv6xqz66gv9sm)（双击可跳转）
+该函数对应的python脚本demo为[`demo_control_param_imm_get.py`](#demo_control_param_imm_getpy)
 
 **函数说明：**
 
@@ -472,7 +470,7 @@ dict = {
 
 ### set\_control\_param\_imm(server\_ip, dict) 该函数暂时用不了
 
-该函数对应的python脚本demo为[`demo_control_param_imm_set.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zsviw0dymuyzbwcr)（双击可跳转）
+该函数对应的python脚本demo为[`demo_control_param_imm_set.py`](#demo_control_param_imm_setpy)
 
 **函数说明：**
 
@@ -497,7 +495,7 @@ dict = {
 
 ### get\_flag\_of\_operation(server\_ip)
 
-该函数对应的python脚本demo为[`demo_flag_of_operation_get.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zsuz3pv9v6jhieh19)（双击可跳转）
+该函数对应的python脚本demo为[`demo_flag_of_operation_get.py`](#demo_flag_of_operation_getpy)
 
 **函数说明：**
 
@@ -508,7 +506,7 @@ dict = {
 
 ### set\_flag\_of\_operation(server\_ip, dict\_cfg)
 
-该函数对应的python脚本demo为[`demo_flag_of_operation_set.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zukgqezoukjntojo)（双击可跳转）
+该函数对应的python脚本demo为[`demo_flag_of_operation_set.py`](#demo_flag_of_operation_setpy)
 
 **函数说明：**
 
@@ -533,7 +531,7 @@ dict = {
 
 ### get\_config(server\_ip)
 
-该函数对应的python脚本demo为[`demo_ctrl_config_get.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zsuzjkg54ip9jlqfd)（双击可跳转）
+该函数对应的python脚本demo为[`demo_ctrl_config_get.py`](#demo_ctrl_config_getpy)
 
 **函数说明：**
 
@@ -544,7 +542,7 @@ dict = {
 
 ### set\_config(server\_ip, dict)
 
-该函数对应的python脚本demo为[`demo_ctrl_config_set.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m32dmme1jyntdvnnyef)（双击可跳转）
+该函数对应的python脚本demo为[`demo_ctrl_config_set.py`](#demo_ctrl_config_setpy)
 
 **函数说明：**
 
@@ -631,7 +629,7 @@ dict = {
 
 ### reboot(server\_ip)
 
-该函数对应的python脚本demo为[`demo_reboot.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zuejlnc4f5kwh0fh)（双击可跳转）
+该函数对应的python脚本demo为[`demo_reboot.py`](#demo_rebootpy)
 
 **函数说明：**
 
@@ -642,7 +640,7 @@ dict = {
 
 ### get\_error\_code(server\_ip)
 
-该函数对应的python脚本demo为[`demo_get_error.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m32etll4j08fmoapl69)（双击可跳转）
+该函数对应的python脚本demo为[`demo_get_error.py`](#demo_get_errorpy)
 
 **函数说明：**
 
@@ -653,7 +651,7 @@ dict = {
 
 ### get\_pvc(server\_ip)
 
-该函数对应的python脚本demo为[`demo_get_pvc.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zuejre0nj7h00mcdzn)（双击可跳转）
+该函数对应的python脚本demo为[`demo_get_pvc.py`](#demo_get_pvcpy)
 
 **函数说明：**
 
@@ -664,7 +662,7 @@ dict = {
 
 ### get\_foc\_target\_PVC(server\_ip)
 
-该函数对应的python脚本demo为[`demo_get_foc_target_PVC.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m32fjg89kpyze8zyual)（双击可跳转）
+该函数对应的python脚本demo为[`demo_get_foc_target_PVC.py`](#demo_get_foc_target_pvcpy)
 
 **函数说明：**
 
@@ -675,7 +673,7 @@ dict = {
 
 ### get\_pvct(server\_ip)
 
-该函数对应的python脚本demo为[`demo_get_pvct.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m32fjgdl1lfqlv5e3yy)（双击可跳转）
+该函数对应的python脚本demo为[`demo_get_pvct.py`](#demo_get_pvctpy)
 
 **函数说明：**
 
@@ -686,7 +684,7 @@ dict = {
 
 ### get\_fsa\_abs\_position(server\_ip) 
 
-该函数对应的python脚本demo为[`demo_get_fsa_abs_position.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m32gugevm5ygbgueevr)（双击可跳转）
+该函数对应的python脚本demo为[`demo_get_fsa_abs_position.py`](#demo_get_fsa_abs_positionpy)
 
 **函数说明：**
 
@@ -697,7 +695,7 @@ dict = {
 
 ### set\_fsa\_abs\_zero(server\_ip)
 
-该函数对应的python脚本demo为[`demo_set_fsa_abs_zero.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m32gugixn4uetvc801)（双击可跳转）
+该函数对应的python脚本demo为[`demo_set_fsa_abs_zero.py`](#demo_set_fsa_abs_zeropy)
 
 **函数说明：**
 
@@ -708,7 +706,7 @@ dict = {
 
 ### set\_eth\_recovery(server\_ip)
 
-该函数对应的python脚本demo为[`demo_set_eth_recovery.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m32gugrt7jge15c2dqg)（双击可跳转）
+该函数对应的python脚本demo为[`demo_set_eth_recovery.py`](#demo_set_eth_recoverypy)
 
 **函数说明：**
 
@@ -719,7 +717,7 @@ dict = {
 
 ### set\_eth\_timeout\_protect(server\_ip, is\_enable, timeout\_interval)低版本不能用
 
-该函数对应的python脚本demo为[`demo_set_eth_timeout_protect.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zuekdsw64nka6w438)（双击可跳转）
+该函数对应的python脚本demo为[`demo_set_eth_timeout_protect.py`](#demo_set_eth_timeout_protectpy)
 
 **函数说明：**
 
@@ -730,7 +728,7 @@ dict = {
 
 ### set\_control\_loop\_freq\_div(server\_ip, position\_loop\_freq\_div, velocity\_loop\_freq\_div, PD\_loop\_freq\_div)低版本不能用
 
-该函数对应的python脚本demo为[`demo_set_control_loop_freq_div.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m359l80dl9eh2094cg)（双击可跳转）
+该函数对应的python脚本demo为[`demo_set_control_loop_freq_div.py`](#demo_set_control_loop_freq_divpy)
 
 **函数说明：**
 
@@ -741,7 +739,7 @@ dict = {
 
 ### set\_torque\_limit\_max(server\_ip, torque\_limit\_max)
 
-该函数对应的python脚本demo为[`demo_set_torque_limit_max.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m35a5i2uayw9nouwe)（双击可跳转）
+该函数对应的python脚本demo为[`demo_set_torque_limit_max.py`](#demo_set_torque_limit_maxpy)
 
 **函数说明：**
 
@@ -752,7 +750,7 @@ dict = {
 
 ### set\_inertia\_ff(server\_ip, inertia\_ff)
 
-该函数对应的python脚本demo为[`demo_set_inertia_ff.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m35a9yp1by0z49piske)（双击可跳转）
+该函数对应的python脚本demo为[`demo_set_inertia_ff.py`](#demo_set_inertia_ffpy)
 
 **函数说明：**
 
@@ -763,7 +761,7 @@ dict = {
 
 ### get\_ntc\_temperature(server\_ip)
 
-该函数对应的python脚本demo为[`demo_get_ntc_temperature.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m32m5olejlibhaazgmn)（双击可跳转）
+该函数对应的python脚本demo为[`demo_get_ntc_temperature.py`](#demo_get_ntc_temperaturepy)
 
 **函数说明：**
 
@@ -774,7 +772,7 @@ dict = {
 
 ### set\_position\_control(server\_ip, position, velocity\_ff=0.0, current\_ff=0.0)
 
-该函数对应的python脚本demo为（双击可跳转）
+该函数无对应的python脚本。
 
 **函数说明：**
 
@@ -785,7 +783,7 @@ dict = {
 
 ### set\_velocity\_control(server\_ip, velocity, current\_ff=0.0)
 
-该函数对应的python脚本demo为（双击可跳转）
+该函数无对应的python脚本。
 
 **函数说明：**
 
@@ -796,7 +794,7 @@ dict = {
 
 ### set\_current\_control(server\_ip, current)
 
-该函数对应的python脚本demo为（双击可跳转）
+该函数无对应的python脚本。
 
 **函数说明：**
 
@@ -807,7 +805,7 @@ dict = {
 
 ### set\_torque\_control(server\_ip, torque)
 
-该函数对应的python脚本demo为（双击可跳转）
+该函数无对应的python脚本。
 
 **函数说明：**
 
@@ -820,7 +818,7 @@ dict = {
 
 ### fast\_set\_enable(server\_ip)
 
-该函数对应的python脚本demo为[`demo_fast_set_enable.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zt1tvnpf42bjs9cu)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_enable.py`](#demo_fast_set_enablepy)
 
 **函数说明：**
 
@@ -831,7 +829,7 @@ dict = {
 
 ### fast\_set\_ack\_enable(server\_ip, cnt)
 
-该函数对应的python脚本demo为[`demo_fast_set_ack_enable.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m4e28imqb9ceyqjk5b)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_ack_enable.py`](#demo_fast_set_ack_enablepy)
 
 **函数说明：**
 
@@ -842,7 +840,7 @@ dict = {
 
 ### fast\_set\_disable(server\_ip)
 
-该函数对应的python脚本demo为[`demo_fast_set_disable.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zugs4zwhuy4actqw)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_disable.py`](#demo_fast_set_disablepy)
 
 **函数说明：**
 
@@ -853,7 +851,7 @@ dict = {
 
 ### fast\_set\_ack\_disable(server\_ip, cnt)
 
-该函数对应的python脚本demo为[`demo_fast_set_ack_disable.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m4e2cc6qxetiw87qo0m)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_ack_disable.py`](#demo_fast_set_ack_disablepy)
 
 **函数说明：**
 
@@ -864,7 +862,7 @@ dict = {
 
 ### fast\_set\_clear\_fault(server\_ip)
 
-该函数对应的python脚本demo为[`demo_fast_set_clear_fault.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2zw2h6un4hcb5mk42)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_clear_fault.py`](#demo_fast_set_clear_faultpy)
 
 **函数说明：**
 
@@ -875,7 +873,7 @@ dict = {
 
 ### fast\_set\_ack\_clear\_fault(server\_ip, cnt)
 
-该函数对应的python脚本demo为[`demo_fast_set_ack_clear_fault.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m4e2eck5cilz3s5vhob)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_ack_clear_fault.py`](#demo_fast_set_ack_clear_faultpy)
 
 **函数说明：**
 
@@ -1099,7 +1097,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_pd\_control(server\_ip, position, velocity\_ff=0, current\_ff=0)
 
-该函数对应的python脚本demo为[`demo_fast_set_pd_position.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m3k4ugf9ylyltkd1yee)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_pd_position.py`](#demo_fast_set_pd_positionpy)
 
 **函数说明：**
 
@@ -1110,7 +1108,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_ack\_pd\_control(server\_ip, cnt, position, velocity\_ff=0, current\_ff=0)
 
-该函数对应的python脚本demo为[`demo_fast_set_ack_pd_position.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m5834oe76763pxplb93)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_ack_pd_position.py`](#demo_fast_set_ack_pd_positionpy)
 
 **函数说明：**
 
@@ -1121,7 +1119,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_pid\_imm(server\_ip, position\_kp, velocity\_kp, velocity\_ki)
 
-该函数对应的python脚本demo为[`demo_fast_set_pid_imm.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m3k68rpkrr29ygpvuoa)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_pid_imm.py`](#demo_fast_set_pid_immpy)
 
 **函数说明：**
 
@@ -1132,7 +1130,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_ack\_pid\_imm(server\_ip, cnt, position\_kp, velocity\_kp, velocity\_ki)
 
-该函数对应的python脚本demo为[`demo_fast_set_ack_pid_imm.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m583owtu7c3zkfv39m5)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_ack_pid_imm.py`](#demo_fast_set_ack_pid_immpy)
 
 **函数说明：**
 
@@ -1143,7 +1141,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_pd\_imm(server\_ip, kp, kd)
 
-该函数对应的python脚本demo为[`demo_fast_set_pd_imm.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m3k75rvdkt40li9a2q)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_pd_imm.py`](#demo_fast_set_pd_immpy)
 
 **函数说明：**
 
@@ -1154,7 +1152,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_ack\_pd\_imm(server\_ip, cnt, kp, kd)
 
-该函数对应的python脚本demo为[`demo_fast_set_ack_pd_imm.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m584sw6r6cuyf7h3b9m)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_ack_pd_imm.py`](#demo_fast_set_ack_pd_immpy)
 
 **函数说明：**
 
@@ -1165,7 +1163,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_control\_loop\_freq\_div(server\_ip, position\_loop\_freq\_div, velocity\_loop\_freq\_div, PD\_loop\_freq\_div)
 
-该函数对应的python脚本demo为[`demo_fast_set_control_loop_freq_div.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m3k81keldlhrrfutf1o)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_control_loop_freq_div.py`](#demo_fast_set_control_loop_freq_divpy)
 
 **函数说明：**
 
@@ -1176,7 +1174,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_ack\_control\_loop\_freq\_div(server\_ip, cnt, position\_loop\_freq\_div, velocity\_loop\_freq\_div, PD\_loop\_freq\_div)
 
-该函数对应的python脚本demo为[`demo_fast_set_ack_control_loop_freq_div.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m5851hq1jp7fh5dn78h)（双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_ack_control_loop_freq_div.py`](#demo_fast_set_ack_control_loop_freq_divpy)
 
 **函数说明：**
 
@@ -1187,7 +1185,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_friction\_FFD(server\_ip, SET, DeadSpeedK, DeadSpeed, Fs, Fc, B, percent):
 
-该函数对应的python脚本demo为[`demo_fast_set_friction_FFD.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m3k8dj1p92xiu5tfjtg) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_friction_FFD.py`](#demo_fast_set_friction_ffdpy) 
 
 **函数说明：**
 
@@ -1198,7 +1196,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_ack\_friction\_FFD(server\_ip, cnt, SET, DeadSpeedK, DeadSpeed, Fs, Fc, B, percent)
 
-该函数对应的python脚本demo为[`demo_fast_set_ack_friction_FFD.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m585go9knikc4ncwd9e) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_ack_friction_FFD.py`](#demo_fast_set_ack_friction_ffdpy) 
 
 **函数说明：**
 
@@ -1209,7 +1207,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_ack\_setpvc\_timeout\_protect(server\_ip, cnt, protect\_enable, timeout\_ms, protect\_mode\_of\_operation, close\_back\_last\_mode\_of\_operation, ignore\_set\_mode\_of\_operation)
 
-该函数对应的python脚本demo为[`demo_fast_set_ack_setpvc_timeout_protect.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m5adw54btjtv5gjs13) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_ack_setpvc_timeout_protect.py`](#demo_fast_set_ack_setpvc_timeout_protectpy) 
 
 **函数说明：**
 
@@ -1220,7 +1218,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_ack\_interface\_filter\_fc(server\_ip, cnt, position, velocity, current)
 
-该函数对应的python脚本demo为[`demo_fast_set_ack_interface_filter_fc.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m5ahqdm3rzgiimxf9q) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_ack_interface_filter_fc.py`](#demo_fast_set_ack_interface_filter_fcpy) 
 
 **函数说明：**
 
@@ -1231,7 +1229,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_set\_ack\_setpvc\_protect\_clear(server\_ip, cnt, clear\_back\_last\_mode\_of\_operation)
 
-该函数对应的python脚本demo为[`demo_fast_set_ack_setpvc_protect_clear.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m5alb7aul6etu2fj3vg) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_set_ack_setpvc_protect_clear.py`](#demo_fast_set_ack_setpvc_protect_clearpy) 
 
 **函数说明：**
 
@@ -1242,7 +1240,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_get\_pvc(server\_ip)
 
-该函数对应的python脚本demo为[`demo_fast_get_pvc.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m3mml4a0nfrah3thpuk) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_get_pvc.py`](#demo_fast_get_pvcpy) 
 
 **函数说明：**
 
@@ -1253,7 +1251,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_get\_foc\_target\_pvc(server\_ip)
 
-该函数对应的python脚本demo为[`demo_fast_get_foc_target_pvc.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m3mndbnrt8tettxbs0m) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_get_foc_target_pvc.py`](#demo_fast_get_foc_target_pvcpy) 
 
 **函数说明：**
 
@@ -1264,7 +1262,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_get\_pvct(server\_ip)
 
-该函数对应的python脚本demo为[`demo_fast_get_pvct.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m3mnohmezz3dsq487mp) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_get_pvct.py`](#demo_fast_get_pvctpy) 
 
 **函数说明：**
 
@@ -1275,7 +1273,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_get\_error(server\_ip)
 
-该函数对应的python脚本demo为[`demo_fast_get_error.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m3mnxt21rf1wsqs3tz) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_get_error.py`](#demo_fast_get_errorpy) 
 
 **函数说明：**
 
@@ -1286,7 +1284,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_get\_pvct\_error(server\_ip)
 
-该函数对应的python脚本demo为[`demo_fast_get_pvct_error.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m5amlkf54f09xz0t584) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_get_pvct_error.py`](#demo_fast_get_pvct_errorpy) 
 
 **函数说明：**
 
@@ -1297,7 +1295,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_get\_friction\_FFD(server\_ip)
 
-该函数对应的python脚本demo为[`demo_fast_get_friction_FFD.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m5amlsgmw6zr49k0b4p) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_get_friction_FFD.py`](#demo_fast_get_friction_ffdpy) 
 
 **函数说明：**
 
@@ -1308,7 +1306,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_get\_ntc\_temp(server\_ip)
 
-该函数对应的python脚本demo为[`demo_fast_get_ntc_temp.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m5amlt961sqcn0h1c0qi) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_get_ntc_temp.py`](#demo_fast_get_ntc_temppy) 
 
 **函数说明：**
 
@@ -1319,7 +1317,7 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 
 ### fast\_get\_vbus(server\_ip)
 
-该函数对应的python脚本demo为[`demo_fast_get_vbus.py`](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m5amltqlm6tudrd6cb) （双击可跳转）
+该函数对应的python脚本demo为[`demo_fast_get_vbus.py`](#demo_fast_get_vbuspy) 
 
 **函数说明：**
 
@@ -1329,10 +1327,6 @@ fi_fsa_v2.fast_set_ack_mode_of_operation(server_ip_list[i], tx_cnt, fi_fsa_v2.FS
 | 函数输出 | 成功输出执行器母线电压，失败输出None |
 
 ## subscribe接口
-
-详见
-
-[《执行器python脚本接口和例程文档》](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2u09m4gifpbsosubym)
 
 # demo例程说明
 
@@ -1748,7 +1742,7 @@ lookup Finished!
     
     1.  使用`broadcast_func_with_filter`函数发现网络上的 FSA 执行器，并根据执行器类型进行筛选
         
-    2.  使用`set_subscribe`函数为每个 Actuator 设置subscribe的配置参数。具体配置内容请看[cfg\_dict](https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8DNkPm7pF4yMnRBaVxLq0Ee4?utm_scene=person_space&iframeQuery=anchorId%3Duu_m2u173uwrjf4npd00qa)
+    2.  使用`set_subscribe`函数为每个 Actuator 设置subscribe的配置参数。
         
     3.  判断是否开启了发送，如果开启了发送则循环接收执行器发送的位置、速度、电流、力矩等数据信息。
         
