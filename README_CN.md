@@ -1,15 +1,15 @@
-# FSA SDK Open Source Package
+# FSA SDK 开源包
 
-## 📋 About
+## 📋 关于
 
-| Item        | Information |
-|-------------|-------------|
-| Version     | v2.0.0.2    |
-| Build Number| 1           |
+| 项目   | 信息     |
+|--------|----------|
+| 版本   | v2.0.0.2 |
+| 构建号 | 1        |
 
 ---
 
-## 📁 Directory Structure
+## 📁 目录结构
 
 ```text
 fourier_actuator_sdk
@@ -49,77 +49,77 @@ fourier_actuator_sdk
 
 ---
 
-## 🚀 Quick Start Guide
+## 🚀 上手指南
 
-### Step 1: Hardware Setup
+### 步骤 1: 硬件准备
 
-1. **Connect Power and Network**
-   - Connect the 48V DC power supply to the FSA
-   - Connect the network cable to the FSA
-   - Observe the FSA indicator light status after powering on
+1. **连接电源和网络**
+   - 将 48V 直流电源接入 FSA
+   - 连接网线到 FSA
+   - 上电后观察 FSA 指示灯状态
 
-2. **Check Indicator Light Status**
-   - ✅ **Purple breathing light**: Normal status
-   - ⚠️ **Yellow/Red breathing light**: Error occurred, need to query error code through host computer
+2. **检查指示灯状态**
+   - ✅ **紫色呼吸灯**：正常状态
+   - ⚠️ **黄色/红色呼吸灯**：出现错误，需要通过上位机查询错误码
 
-3. **Confirm IP Address**
-   - Check if the FSA IP is `192.168.137.101`
-   - > 💡 **Tip**: cpp example uses `192.168.137.101` as the default target FSA address
+3. **确认 IP 地址**
+   - 检查 FSA IP 是否为 `192.168.137.101`
+   - > 💡 **提示**：cpp example 默认使用 `192.168.137.101` 作为目标 FSA 地址
 
 ---
 
-### Step 2: Environment Configuration
+### 步骤 2: 环境配置
 
-#### Linux Environment
+#### Linux 环境
 
 ```bash
-# Install build tools
+# 安装编译工具
 sudo apt install build-essential cmake
 
-# Install Python dependencies
+# 安装 Python 依赖
 pip install numpy pandas fi_fsa
 ```
 
-#### Windows Environment
+#### Windows 环境
 
 ```powershell
-# Install Python dependencies
+# 安装 Python 依赖
 pip install numpy pandas fi_fsa
 ```
 
 ---
 
-### Step 3: Run Example
+### 步骤 3: 运行示例
 
 #### C++ - Linux
 
 ```bash
-# Navigate to example directory
+# 进入示例目录
 cd Linux-x86_64/cpp/example
 
-# Build
+# 编译
 cmake -B build -G "Unix Makefiles" && cmake --build build
 
-# Run example
+# 运行示例
 ./build/get_pvctte
 ```
 
 #### C++ - Windows
 
 ```powershell
-# Navigate to example directory
+# 进入示例目录
 cd Windows-x86_64\cpp\example
 
-# Build (requires MinGW)
+# 编译（需要 MinGW）
 cmake -B build -G "MinGW Makefiles" && cmake --build build
 
-# Run example
+# 运行示例
 .\build\get_pvctte.exe
 ```
 
-#### C++ Example Output
+#### C++ 示例输出
 
-If successful, you should see output similar to the following:
+如果运行成功，应该看到类似以下输出：
 
 ```text
 FSA(192.168.137.101): pos: 0.5418, vel: 0.0008, cur: 0.0000, tor: -0.0018, tor_e: 0.0000
@@ -139,33 +139,31 @@ FSA(192.168.137.101): elapsed time: 88 us
 FSA(192.168.137.101): pos: 0.5418, vel: -0.0012, cur: 0.0000, tor: 0.0032, tor_e: 0.0000
 ```
 
-> ⚠️ **Troubleshooting**: If an error code is returned, please refer to the [C++ API Documentation](doc/EN/fourier_actuator_sdk_cpp_api.md) to query the corresponding status code and troubleshoot.
-
----
+> ⚠️ **故障排除**：若返回错误码，请参考 [C++ API 文档](doc/CN/fourier_actuator_sdk_cpp_api.md) 查询对应状态码并排除错误。
 
 #### Python - Linux
 
 ```bash
-# Navigate to example directory
+# 进入示例目录
 cd Linux-x86_64/python/v2/example
 
-# Run example
+# 运行示例
 python3 ./demo_fast_get_pvct.py
 ```
 
 #### Python - Windows
 
 ```powershell
-# Navigate to example directory
+# 进入示例目录
 cd Windows-x86_64\python\v2\example
 
-# Run example
+# 运行示例
 python .\demo_fast_get_pvct.py
 ```
 
-#### Python Example Output
+#### Python 示例输出
 
-If successful, you should see output similar to the following:
+如果运行成功，应该看到类似以下输出：
 
 ```text
 [2026.01.19 13:37:27.333.072]  Info:    192.168.137.101 : Send Data: b'\x1d'
@@ -187,72 +185,72 @@ Position = 31.041553, Velocity = 0.059110, Current = 0.000000, Torque = 0.004436
 
 ---
 
-### Step 4: Make FSA Rotate
+### 步骤 4: 使 FSA 转动
 
-> ⚠️ **Safety Warning**:
+> ⚠️ **安全提示**：
 >
-> - **Secure the FSA** before making it rotate
-> - Ensure the DC power supply current limit threshold is set appropriately (no-load current can be limited within 2A)
-> - If the FSA response is slow, you may need to adjust PID/PD parameters
+> - 在使 FSA 转动前，**必须将 FSA 固定好**
+> - 确保直流电源限流阈值设置合理（空载可限流在 2A 内）
+> - 若 FSA 响应较慢，可能需要调整 PID/PD 参数
 
-#### Position Control Example - C++ (Linux)
+#### 位置控制示例 - C++ (Linux)
 
 ```bash
-# Navigate to example directory
+# 进入示例目录
 cd Linux-x86_64/cpp/example
 
-# Run example
+# 运行示例
 ./build/position_control
 ```
 
-#### Position Control Example - C++ (Windows)
+#### 位置控制示例 - C++ (Windows)
 
 ```powershell
-# Navigate to example directory
+# 进入示例目录
 cd Windows-x86_64\cpp\example
 
-# Run example
+# 运行示例
 .\build\position_control.exe
 ```
 
-#### Position Control Example - Python (Linux)
+#### 位置控制示例 - Python (Linux)
 
 ```bash
-# Navigate to example directory
+# 进入示例目录
 cd Linux-x86_64/python/v2/example
 
-# Run example
+# 运行示例
 python3 ./demo_fast_control_position_mode.py
 ```
 
-#### Position Control Example - Python (Windows)
+#### 位置控制示例 - Python (Windows)
 
 ```powershell
-# Navigate to example directory
+# 进入示例目录
 cd Windows-x86_64\python\v2\example
 
-# Run example
+# 运行示例
 python .\demo_fast_control_position_mode.py
 ```
 
 ---
 
-## 📚 Related Documentation
+## 📚 相关文档
 
-For more detailed documentation, please refer to:
+更多详细文档请参考：
 
-- 📖 [Actuator Introduction](doc/EN/fourier_actuator_intro.md) - Learn about FSA actuator basic concepts and control modes
+- 📖 [执行器介绍](doc/CN/fourier_actuator_intro.md) - 了解 FSA 执行器的基本概念和控制模式
 
-- 🔧 [C++ API Documentation](doc/EN/fourier_actuator_sdk_cpp_api.md) - C++ interface function descriptions and examples
+- 🔧 [C++ API 文档](doc/CN/fourier_actuator_sdk_cpp_api.md) - C++ 接口函数说明和示例
 
-- 🐍 [Python API Documentation](doc/EN/fourier_actuator_sdk_python_api.md) - Python interface function descriptions and examples
+- 🐍 [Python API 文档](doc/CN/fourier_actuator_sdk_python_api.md) - Python 接口函数说明和示例
 
 ---
 
-## 💡 Tips
+## 💡 提示
 
-- If you encounter issues, first check hardware connections and IP address configuration
+- 如果遇到问题，请先检查硬件连接和 IP 地址配置
 
-- For error code queries, please refer to the corresponding API documentation
+- 错误码查询请参考对应的 API 文档
 
-- It is recommended to secure the FSA before performing motion control tests
+- 建议在固定 FSA 后再进行运动控制测试
