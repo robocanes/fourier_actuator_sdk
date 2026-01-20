@@ -34,7 +34,7 @@ I_{q_{set_{j}}} = \frac{(K_{p}^{parallel} q_{err} - K_{d}^{parallel} \dot{q})}{K
 $$
 
 $$
-\rm{(A) = \frac{(\frac{Nm}{rad}) (deg) - (\frac{Nm \cdot s}{rad}) (\frac{deg}{s})}{(\frac{Nm}{A})} \cdot \frac{(rad)}{(deg)}}}
+\rm{(A) = \frac{(\frac{Nm}{rad}) (deg) - (\frac{Nm \cdot s}{rad}) (\frac{deg}{s})}{(\frac{Nm}{A})} \cdot \frac{(rad)}{(deg)}}
 $$
 
 - $K_{p}^{parallel}: \rm{\frac{Nm}{rad}}$
