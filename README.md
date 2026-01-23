@@ -93,11 +93,13 @@ cmake -S . -B build_linux_cpp && cmake --build build_linux_cpp -j
 cd example\cpp
 
 # Build (requires MSVC)
-cmake -S . -B build_windows_cpp; cmake --build build_windows_cpp
+cmake -S . -B build_windows_cpp; cmake --build build_windows_cpp --config Release
 
 # Run example
 .\build_windows_cpp\Debug\demo_get_info.exe
 ```
+
+**Note:** Only the Release configuration can be used during the build process.
 
 #### C++ Example Output
 
