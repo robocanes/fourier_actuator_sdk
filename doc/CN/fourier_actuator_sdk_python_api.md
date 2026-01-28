@@ -1,8 +1,6 @@
 # 执行器python脚本接口文档
 
-# 文档说明
-
-数据单位说明：
+下文介绍中涉及的相关物理量单位说明如下表：
 
 | 数据类型 | 单位 |
 | --- | --- |
@@ -11,13 +9,11 @@
 | 电流 | A |
 | 力矩 | N·m |
 
-# 接口函数说明
-
 ## ctrl接口
 
 ### EnableControl(ctrl_mode, timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_position_control.py`](fourier_actuator_sdk_python_demo.md#demo_position_controlpy)
+该函数对应的python脚本demo为[`demo_position_control.py`](../../example/python/demo_position_control.py)
 
 **函数说明：**
 
@@ -37,7 +33,7 @@
 
 ### DisableControl(timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_position_control.py`](fourier_actuator_sdk_python_demo.md#demo_position_controlpy)
+该函数对应的python脚本demo为[`demo_position_control.py`](../../example/python/demo_position_control.py)
 
 **函数说明：**
 
@@ -49,7 +45,7 @@
 
 ### SetPIDParams(p_kp, v_kp, v_ki, timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_position_control.py`](fourier_actuator_sdk_python_demo.md#demo_position_controlpy)
+该函数对应的python脚本demo为[`demo_position_control.py`](../../example/python/demo_position_control.py)
 
 **函数说明：**
 
@@ -60,7 +56,7 @@
 
 ### GetPIDParams(rx_pid, timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_get_info.py`](fourier_actuator_sdk_python_demo.md#demo_get_infopy)
+该函数对应的python脚本demo为[`demo_get_info.py`](../../example/python/demo_get_info.py)
 
 **函数说明：**
 
@@ -71,7 +67,7 @@
 
 ### GetPVCTTe(rx_PVCTTe, timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_get_info.py`](fourier_actuator_sdk_python_demo.md#demo_get_infopy)
+该函数对应的python脚本demo为[`demo_get_info.py`](../../example/python/demo_get_info.py)
 
 **函数说明：**
 
@@ -82,7 +78,7 @@
 
 ### SetPosition(p_rad, v_ff_radps, t_ff_Nm, max_retry)
 
-该函数对应的python脚本demo为[`demo_position_control.py`](fourier_actuator_sdk_python_demo.md#demo_position_controlpy)
+该函数对应的python脚本demo为[`demo_position_control.py`](../../example/python/demo_position_control.py)
 
 **函数说明：**
 
@@ -93,7 +89,7 @@
 
 ### SetTorque(t_Nm, timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_torque_control.py`](fourier_actuator_sdk_python_demo.md#demo_torque_controlpy)
+该函数对应的python脚本demo为[`demo_torque_control.py`](../../example/python/demo_torque_control.py)
 
 **函数说明：**
 
@@ -104,7 +100,7 @@
 
 ### GetTempVbus(rx_temp_vbus, timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_get_info.py`](fourier_actuator_sdk_python_demo.md#demo_get_infopy)
+该函数对应的python脚本demo为[`demo_get_info.py`](../../example/python/demo_get_info.py)
 
 **函数说明：**
 
@@ -115,7 +111,7 @@
 
 ### GetErrCode(rx_errcode, timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_get_info.py`](fourier_actuator_sdk_python_demo.md#demo_get_infopy)
+该函数对应的python脚本demo为[`demo_get_info.py`](../../example/python/demo_get_info.py)
 
 **函数说明：**
 
@@ -126,7 +122,7 @@
 
 ### ParseErrCode(err_code, parsed_err_code)
 
-该函数对应的python脚本demo为[`demo_get_info.py`](fourier_actuator_sdk_python_demo.md#demo_get_infopy)
+该函数对应的python脚本demo为[`demo_get_info.py`](../../example/python/demo_get_info.py)
 
 **函数说明：**
 
@@ -137,7 +133,7 @@
 
 ### GetPDParams(rx_pd, timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_get_info.py`](fourier_actuator_sdk_python_demo.md#demo_get_infopy)
+该函数对应的python脚本demo为[`demo_get_info.py`](../../example/python/demo_get_info.py)
 
 **函数说明：**
 
@@ -148,7 +144,7 @@
 
 ### GetTypeSubversion(type_subversion, timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_get_info.py`](fourier_actuator_sdk_python_demo.md#demo_get_infopy)
+该函数对应的python脚本demo为[`demo_get_info.py`](../../example/python/demo_get_info.py)
 
 **函数说明：**
 
@@ -159,7 +155,7 @@
 
 ### GetCommConfig(comm_req_get, comm_resp_get, timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_get_info.py`](fourier_actuator_sdk_python_demo.md#demo_get_infopy)
+该函数对应的python脚本demo为[`demo_get_info.py`](../../example/python/demo_get_info.py)
 
 **函数说明：**
 
@@ -187,7 +183,7 @@
 
 ### EnableSubscribe(subs_config, timeout_ms, max_retry)
 
-该函数对应的python脚本demo为[`demo_subscribe.py`](fourier_actuator_sdk_python_demo.md#demo_subscribepy)
+该函数对应的python脚本demo为[`demo_subscribe.py`](../../example/python/demo_subscribe.py)
 
 **函数说明：**
 
@@ -220,7 +216,7 @@
 
 ### GetSubsData(subs_data)
 
-该函数对应的python脚本demo为[`demo_subscribe.py`](fourier_actuator_sdk_python_demo.md#demo_subscribepy)
+该函数对应的python脚本demo为[`demo_subscribe.py`](../../example/python/demo_subscribe.py)
 
 **函数说明：**
 
