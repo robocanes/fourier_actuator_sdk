@@ -1,4 +1,3 @@
-
 # Actuator CPP SDK Interface
 
 ## Init
@@ -269,7 +268,6 @@
 3. `max_retry`: Maximum retry times, default 1
 
 **Return:** Returns detailed execution status ret_e(int)
-
 
 ## Config
 

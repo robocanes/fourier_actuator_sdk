@@ -20,7 +20,6 @@
 | 函数作用 | 执行器控制使能 |
 | --- | --- |
 | 函数输入 | **ctrl_mode：** 控制模式<br> **timeout_ms：** 超时时间（ms），默认为 5ms<br>**max_retry：** 最大重试次数，默认为 1 次 |
-
 | 函数输出 | 返回详细执行状态ret_e(int) |
 
 | 控制模式具体配置 | 含义 | 类型 |
@@ -40,7 +39,6 @@
 | 函数作用 | 失能执行器 |
 | --- | --- |
 | 函数输入 | **timeout_ms：** 超时时间（ms），默认为 5ms<br>**max_retry：** 最大重试次数，默认为 1 次 |
-
 | 函数输出 | 返回详细执行状态ret_e(int) |
 
 ### SetPIDParams(p_kp, v_kp, v_ki, timeout_ms, max_retry)

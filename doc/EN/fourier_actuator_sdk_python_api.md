@@ -13,16 +13,16 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### EnableControl(ctrl_mode, timeout_ms, max_retry)
 
-**Demo script:** [`demo_position_control.py`](../../example/python/demo_position_control.py)
+The corresponding Python script demo for this function is [`demo_position_control.py`](../../example/python/demo_position_control.py)
+
+**Function Description:**
 
 | Description | Enable actuator control                                                                                            |
 | ----------- | ------------------------------------------------------------------------------------------------------------------ |
 | Inputs      | **ctrl_mode:** Control mode<br>**timeout_ms:** Timeout in ms, default 5<br>**max_retry:** Maximum retry, default 1 |
 | Output      | Returns detailed execution status ret_e(int)                                                                    |
 
-**Control mode options:**
-
-| Mode            | Meaning                                              | Type |
+| Specific configuration of control mode            | Meaning                                              | Type |
 | --------------- | ---------------------------------------------------- | ---- |
 | CURRENT_MODE  | Current control mode, use torque control recommended | int  |
 | TORQUE_MODE   | Torque control mode                                  | int  |
@@ -32,7 +32,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### DisableControl(timeout_ms, max_retry)
 
-**Demo script:** [`demo_position_control.py`](../../example/python/demo_position_control.py)
+The corresponding Python script demo for this function is[`demo_position_control.py`](../../example/python/demo_position_control.py)
+
+**Function Description:**
 
 | Description | Disable actuator                                                                    |
 | ----------- | ----------------------------------------------------------------------------------- |
@@ -41,7 +43,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### SetPIDParams(p_kp, v_kp, v_ki, timeout_ms, max_retry)
 
-**Demo script:** [`demo_position_control.py`](../../example/python/demo_position_control.py)
+The corresponding Python script demo for this function is[`demo_position_control.py`](../../example/python/demo_position_control.py)
+
+**Function Description:**
 
 | Description | Set position and velocity loop PID parameters in real time                                                                                                                                                        |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,7 +54,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### GetPIDParams(rx_pid, timeout_ms, max_retry)
 
-**Demo script:** [`demo_get_info.py`](../../example/python/demo_get_info.py)
+The corresponding Python script demo for this function is[`demo_get_info.py`](../../example/python/demo_get_info.py)
+
+**Function Description:**
 
 | Description | Get position and velocity loop PID parameters                                                                                |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -59,7 +65,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### GetPVCTTe(rx_PVCTTe, timeout_ms, max_retry)
 
-**Demo script:** [`demo_get_info.py`](../../example/python/demo_get_info.py)
+The corresponding Python script demo for this function is[`demo_get_info.py`](../../example/python/demo_get_info.py)
+
+**Function Description:**
 
 | Description | Get actuator feedback: position, velocity, current, torque, electromagnetic torque                                    |
 | ----------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -68,7 +76,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### SetPosition(p_rad, v_ff_radps, t_ff_Nm, timeout_ms, max_retry)
 
-**Demo script:** [`demo_position_control.py`](../../example/python/demo_position_control.py)
+The corresponding Python script demo for this function is[`demo_position_control.py`](../../example/python/demo_position_control.py)
+
+**Function Description:**
 
 | Description | Send position target, velocity feedforward, torque feedforward; actuator replies                                                                                                        |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -77,7 +87,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### SetTorque(t_Nm, timeout_ms, max_retry)
 
-**Demo script:** [`demo_torque_control.py`](../../example/python/demo_torque_control.py)
+The corresponding Python script demo for this function is[`demo_torque_control.py`](../../example/python/demo_torque_control.py)
+
+**Function Description:**
 
 | Description | Send torque target; actuator replies                                                                      |
 | ----------- | --------------------------------------------------------------------------------------------------------- |
@@ -86,7 +98,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### GetTempVbus(rx_temp_vbus, timeout_ms, max_retry)
 
-**Demo script:** [`demo_get_info.py`](../../example/python/demo_get_info.py)
+The corresponding Python script demo for this function is[`demo_get_info.py`](../../example/python/demo_get_info.py)
+
+**Function Description:**
 
 | Description | Get MOS temperature, winding temperature, voltage                                                                        |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -95,7 +109,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### GetErrCode(rx_errcode, timeout_ms, max_retry)
 
-**Demo script:** [`demo_get_info.py`](../../example/python/demo_get_info.py)
+The corresponding Python script demo for this function is[`demo_get_info.py`](../../example/python/demo_get_info.py)
+
+**Function Description:**
 
 | Description | Get actuator current error code                                                                                    |
 | ----------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -104,7 +120,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### ParseErrCode(err_code, parsed_err_code)
 
-**Demo script:** [`demo_get_info.py`](../../example/python/demo_get_info.py)
+The corresponding Python script demo for this function is[`demo_get_info.py`](../../example/python/demo_get_info.py)
+
+**Function Description:**
 
 | Description | Parse actuator error code                                                        |
 | ----------- | -------------------------------------------------------------------------------- |
@@ -113,7 +131,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### GetPDParams(rx_pd, timeout_ms, max_retry)
 
-**Demo script:** [`demo_get_info.py`](../../example/python/demo_get_info.py)
+The corresponding Python script demo for this function is[`demo_get_info.py`](../../example/python/demo_get_info.py)
+
+**Function Description:**
 
 | Description | Get immediate (imm) PD parameters                                                                                |
 | ----------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -122,7 +142,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### GetTypeSubversion(type_subversion, timeout_ms, max_retry)
 
-**Demo script:** [`demo_get_info.py`](../../example/python/demo_get_info.py)
+The corresponding Python script demo for this function is[`demo_get_info.py`](../../example/python/demo_get_info.py)
+
+**Function Description:**
 
 | Description | Get actuator model and subversion                                                                                                 |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -131,16 +153,16 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### GetCommConfig(comm_req_get, comm_resp_get, timeout_ms=5, max_retry=1)
 
-**Demo script:** [`demo_get_info.py`](../../example/python/demo_get_info.py)
+The corresponding Python script demo for this function is[`demo_get_info.py`](../../example/python/demo_get_info.py)
+
+**Function Description:**
 
 | Description | Get actuator communication configuration                                                                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Inputs      | **comm_req_get:** Specify which parameters to request<br>**comm_resp_get:** Store retrieved config<br>**timeout_ms:** Timeout (ms), default 5<br>**max_retry:** Max retry, default 1 |
 | Output      | Returns detailed execution status ret_e(int)                                                                                                                                      |
 
-**Communication parameters:**
-
-| Parameter      | Meaning                       | Type |
+| Specific configuration of communication parameters      | Meaning                       | Type |
 | -------------- | ----------------------------- | ---- |
 | DHCP_enable    | Whether DHCP is enabled       | bool |
 | PCBA_sn        | Retrieve PCBA SN              | bool |
@@ -159,16 +181,16 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### EnableSubscribe(subs_config, timeout_ms, max_retry)
 
-**Demo script:** [`demo_subscribe.py`](../../example/python/demo_subscribe.py)
+The corresponding Python script demo for this function is[`demo_subscribe.py`](../../example/python/demo_subscribe.py)
+
+**Function Description:**
 
 | Description | Configure subscription mode                                                                                                   |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | Inputs      | **subs_config:** Subscription configuration<br>**timeout_ms:** Timeout (ms), default 5<br>**max_retry:** Max retry, default 1 |
 | Output      | Returns detailed execution status ret_e(int)                                                                               |
 
-**Subscription parameters:**
-
-| Parameter         | Meaning                                                  | Type |
+| Specific configuration of subscription parameters         | Meaning                                                  | Type |
 | ----------------- | -------------------------------------------------------- | ---- |
 | cur               | Current subscription, 0:disable, 1:enable                | int  |
 | enable            | Subscription enable, 0:disable, 1:enable                 | int  |
@@ -192,7 +214,9 @@ The unit descriptions of the relevant physical quantities mentioned in the follo
 
 ### GetSubsData(subs_data)
 
-**Demo script:** [`demo_subscribe.py`](../../example/python/demo_subscribe.py)
+The corresponding Python script demo for this function is[`demo_subscribe.py`](../../example/python/demo_subscribe.py)
+
+**Function Description:**
 
 | Description | Get latest subscription data                     |
 | ----------- | ------------------------------------------------ |
