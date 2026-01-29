@@ -38,12 +38,14 @@ fourier_actuator_sdk
 │      
 └── doc
     ├── CN
+    │   ├── fourier_actuator_intro.md
     │   ├── fourier_actuator_sdk_cpp_api.md
     │   └── fourier_actuator_sdk_python_api.md
-    │
-    └── EN
-        ├── fourier_actuator_sdk_cpp_api.md
-        └── fourier_actuator_sdk_python_api.md
+    ├── EN
+    │   ├── fourier_actuator_intro.md
+    │   ├── fourier_actuator_sdk_cpp_api.md
+    │   └── fourier_actuator_sdk_python_api.md
+    └── images
 ```
 
 ## 🚀 快速开始指南
@@ -278,6 +280,8 @@ python .\demo_position_control.py
 ## 📚 相关文档
 
 更多详细文档请参考：
+
+- 📖 [执行器介绍](doc/CN/fourier_actuator_intro.md) - 了解 FSA 执行器的基本概念和控制模式
 
 - 🔧 [C++ API 文档](doc/CN/fourier_actuator_sdk_cpp_api.md) - C++ 接口函数说明和示例
 

@@ -38,12 +38,14 @@ fourier_actuator_sdk
 │      
 └── doc
     ├── CN
+    │   ├── fourier_actuator_intro.md
     │   ├── fourier_actuator_sdk_cpp_api.md
     │   └── fourier_actuator_sdk_python_api.md
-    │
-    └── EN
-        ├── fourier_actuator_sdk_cpp_api.md
-        └── fourier_actuator_sdk_python_api.md
+    ├── EN
+    │   ├── fourier_actuator_intro.md
+    │   ├── fourier_actuator_sdk_cpp_api.md
+    │   └── fourier_actuator_sdk_python_api.md
+    └── images
 ```
 
 ## 🚀 Quick Start Guide
@@ -268,6 +270,8 @@ python .\demo_position_control.py
 ## 📚 Related Documentation
 
 For more detailed documentation, please refer to:
+
+- 📖 [Actuator Introduction](doc/EN/fourier_actuator_intro.md) - Learn about FSA actuator basic concepts and control modes
 
 - 🔧 [C++ API Documentation](doc/EN/fourier_actuator_sdk_cpp_api.md) - C++ interface function descriptions and examples
 
