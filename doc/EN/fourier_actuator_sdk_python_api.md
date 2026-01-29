@@ -1,17 +1,12 @@
 # Actuator Python Script API Documentation
 
-# Documentation
-
-Data Unit Description:
-
+The unit descriptions of the relevant physical quantities mentioned in the following text are as follows:
 | Data Type | Unit |
 | --- | --- |
 | Position | Degrees (angular) |
 | Velocity | Degrees/second (angular) |
 | Current | A |
 | Torque | N·m |
-
-# API Function Documentation
 
 ## comm Interface
 

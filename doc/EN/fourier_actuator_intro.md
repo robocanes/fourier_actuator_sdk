@@ -1,14 +1,34 @@
-# Actuator Control Modes
+# Actuator Introduction
 
-## Current Mode
+The symbols of the relevant physical quantities mentioned in the following text are as follows:
+| Symbol | Value | Unit | Description |
+| :-------------: | :---------------------------------------: | :------------------: | :--------------: |
+|     $q_{d}$     | Variable |      $\rm{deg}$      | Desired position     |
+|       $q$       | Variable |      $\rm{deg}$      | Feedback position     |
+|    $q_{err}$    | Variable |      $\rm{deg}$      | Position error     |
+|  $\dot{q_{d}}$  | Variable | $\rm{\frac{deg}{s}}$ | Desired velocity     |
+|    $\dot{q}$    | Variable |     $\rm{deg/s}$     | Feedback velocity     |
+| $\dot{q}_{err}$ | Variable |     $\rm{deg/s}$     | Velocity error     |
+|  $I_{q_{set}}$  | Variable |       $\rm{A}$       | Desired $q$-axis current  |
+|     $I_{q}$     | Variable |       $\rm{A}$       | Feedback $q$-axis current  |
+|    $\tau_d$     | Variable |   $\rm{N \cdot m}$   | Desired torque     |
+|  $T_{\omega}$   | $0.1$ |      $\rm{ms}$       | Velocity loop control period  |
+|     $K_{t}$     | Constant (determined by actuator model) |          -           | Current-to-torque conversion coefficient |
+|       $r$       | Constant (determined by actuator model) |          -           | Reduction ratio      |
+|    $N_{pp}$     | Constant (determined by actuator model) |          -           | Pole pairs      |
+|  $G_{\omega}$   | $\rm{\frac{r \cdot N_{pp}}{360^{\circ}}}$ | $\rm{\frac{1}{deg}}$ | Velocity conversion coefficient   |
+
+## Actuator Control Modes
+
+### Current Mode
 
 ![FSA-电流控制模式-控制框图.drawio](../images/FSA-电流控制模式-控制框图.drawio.svg "Current Mode")
 
-## Velocity Mode
+### Velocity Mode
 
 ![FSA-速度控制模式-控制框图.drawio](../images/FSA-速度控制模式-控制框图.drawio.svg "Velocity Mode")
 
-## Position Mode
+### Position Mode
 
 ![FSA-位置控制模式-控制框图.drawio](../images/FSA-位置控制模式-控制框图.drawio.svg "Position Mode")
 
@@ -20,12 +40,12 @@ $$
 \rm{(A) = (A \cdot s) \left((\frac{1}{deg \cdot s})(deg) - (\frac{deg}{s})(\frac{1}{deg}) \right)}
 $$
 
-- $K_{p}^{series}: \rm{A \cdot s}$
-- $K_{d}^{series}: \rm{\frac{1}{deg \cdot s}}$
+- $K_{p}^{series}: \rm{\frac{1}{deg \cdot s}}$
+- $K_{d}^{series}: \rm{A \cdot s}$
 
 If the integral coefficient of the velocity loop is set to 0 in position mode, it is equivalent to **Series PD**.
 
-## PD Mode
+### PD Mode
 
 ![FSA-PD 控制模式-控制框图.drawio](../images/FSA-PD控制模式-控制框图.drawio.svg "PD Mode")
 
@@ -40,7 +60,7 @@ $$
 - $K_{p}^{parallel}: \rm{\frac{Nm}{rad}}$
 - $K_{d}^{parallel}: \rm{\frac{Nm \cdot s}{rad}}$
 
-## Parameter Conversion between Position Mode and PD Mode
+### Parameter Conversion between Position Mode and PD Mode
 
 - Series parameters to parallel parameters (Position Mode --> PD Mode)
 
@@ -62,28 +82,9 @@ $$
 K_{d}^{series} = \frac{K_{d}^{parallel}}{r K_{t} G_{\omega}} \cdot \frac{\pi}{180^{\circ}}
 $$
 
-## Symbol Table
+## Other Actuator Features
 
-| Symbol | Value | Unit | Description |
-| :-------------: | :---------------------------------------: | :------------------: | :--------------: |
-|     $q_{d}$     | Variable |      $\rm{deg}$      | Desired position     |
-|       $q$       | Variable |      $\rm{deg}$      | Feedback position     |
-|    $q_{err}$    | Variable |      $\rm{deg}$      | Position error     |
-|  $\dot{q_{d}}$  | Variable | $\rm{\frac{deg}{s}}$ | Desired velocity     |
-|    $\dot{q}$    | Variable |     $\rm{deg/s}$     | Feedback velocity     |
-| $\dot{q}_{err}$ | Variable |     $\rm{deg/s}$     | Velocity error     |
-|  $I_{q_{set}}$  | Variable |       $\rm{A}$       | Desired $q$-axis current  |
-|     $I_{q}$     | Variable |       $\rm{A}$       | Feedback $q$-axis current  |
-|    $\tau_d$     | Variable |   $\rm{N \cdot m}$   | Desired torque     |
-|  $T_{\omega}$   | $0.1$ |      $\rm{ms}$       | Velocity loop control period  |
-|     $K_{t}$     | Constant (determined by actuator model) |          -           | Current-to-torque conversion coefficient |
-|       $r$       | Constant (determined by actuator model) |          -           | Reduction ratio      |
-|    $N_{pp}$     | Constant (determined by actuator model) |          -           | Pole pairs      |
-|  $G_{\omega}$   | $\rm{\frac{r \cdot N_{pp}}{360^{\circ}}}$ | $\rm{\frac{1}{deg}}$ | Velocity conversion coefficient   |
-
-# Other Actuator Features
-
-## PVCT Feedback Filtering
+### PVCT Feedback Filtering
 
 | Default Cutoff Frequency fc (Hz) | Gain | Period ts (s) |
 | -------------------- | -------------------------------- | ------------------------- |
@@ -109,7 +110,7 @@ Input signal: 200Hz sine wave
 
 ![image](../images/伯德图2.png "Bode Plot")
 
-## Homing Mode
+### Homing Mode
 
 > This mode is only available on FSA with **dual encoders**.
 
@@ -117,7 +118,7 @@ Homing mode uses the output shaft encoder data as position feedback (full closed
 
 ![FSA-回零模式-控制框图.drawio](../images/FSA-回零模式-控制框图.drawio.svg "Homing Mode")
 
-## Friction Compensation
+### Friction Compensation
 
 The friction compensation function can only be enabled after the actuator friction identification has been performed.
 
@@ -125,7 +126,7 @@ For friction identification, the actuator needs to be removed separately, and th
 
 ![FSA-摩擦补偿-控制框图.drawio](../images/FSA-摩擦补偿-控制框图.drawio.svg "Friction Compensation")
 
-## Load Observer
+### Load Observer
 
 After enabling load compensation, the low-speed performance of the actuator will be greatly improved. If the load compensation parameters are properly adjusted, very small velocity fluctuations can be maintained at extremely low speeds (below 1 deg/s).
 
