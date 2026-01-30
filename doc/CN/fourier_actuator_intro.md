@@ -40,8 +40,8 @@ $$
 \rm{(A) = (A \cdot s) \left((\frac{1}{deg \cdot s})(deg) - (\frac{deg}{s})(\frac{1}{deg}) \right)}
 $$
 
-- $K_{p}^{series}: \rm{A \cdot s}$
-- $K_{d}^{series}: \rm{\frac{1}{deg \cdot s}}$
+- $K_{p}^{series}: \rm{\frac{1}{deg \cdot s}}$
+- $K_{d}^{series}: \rm{A \cdot s}$
 
 位置模式下如果将速度环的积分系数设置为 0，则等价于**串联 PD**。
 
