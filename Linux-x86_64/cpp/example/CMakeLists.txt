@@ -8,15 +8,27 @@ find_package(Threads REQUIRED)
 
 get_filename_component(PARENT_DIR ${CMAKE_CURRENT_SOURCE_DIR} DIRECTORY)
 
-include_directories(${PARENT_DIR})
+set(FSA_INCLUDE_DIR ${PARENT_DIR} CACHE PATH "Directory containing fsav2.h")
+include_directories(${FSA_INCLUDE_DIR})
 
 if(WIN32)
     set(FSA_LIB_DIR ${PARENT_DIR})
     set(FSA_LIB_FILE ${PARENT_DIR}/libfsav2.dll.a)
     set(FSA_DLL ${PARENT_DIR}/fsav2.dll)
 else()
-    set(FSA_LIB_DIR ${PARENT_DIR})
-    set(FSA_LIB_FILE ${PARENT_DIR}/libfsav2.so)
+    set(FSA_LIB_DIR ${PARENT_DIR} CACHE PATH "Directory containing libfsav2.so")
+    set(FSA_LIB_FILE ${FSA_LIB_DIR}/libfsav2.so CACHE FILEPATH "Path to libfsav2.so")
+    if(NOT EXISTS ${FSA_LIB_FILE})
+        message(FATAL_ERROR "${FSA_LIB_FILE} does not exist.")
+    endif()
+    file(READ ${FSA_LIB_FILE} FSA_LIB_MAGIC OFFSET 0 LIMIT 4 HEX)
+    if(NOT FSA_LIB_MAGIC STREQUAL "7f454c46")
+        message(FATAL_ERROR
+            "${FSA_LIB_FILE} is not an ELF shared library. "
+            "It is probably a Git LFS pointer file. Run `git lfs pull` "
+            "in fourier_actuator_sdk, or configure with "
+            "`-DFSA_LIB_DIR=/path/to/a/directory/containing/the/real/libfsav2.so`.")
+    endif()
 endif()
 
 file(GLOB EXAMPLE_SOURCES "*.cpp")
@@ -41,5 +53,6 @@ foreach(SOURCE_FILE ${EXAMPLE_SOURCES})
 endforeach()
 
 message(STATUS "Found examples: ${EXAMPLE_SOURCES}")
+message(STATUS "Include directory: ${FSA_INCLUDE_DIR}")
 message(STATUS "Library directory: ${FSA_LIB_DIR}")
 message(STATUS "Library file: ${FSA_LIB_FILE}")
